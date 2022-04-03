@@ -166,7 +166,6 @@ let enReproduccion = null
 
 // Capturar elementos del DOM para trabajar con JS
 const songlist = document.getElementById("songlist")
-const songlist2 = document.getElementById("songlist2")
 const audio = document.getElementById("audio")
 const image = document.getElementById("image")
 const title = document.getElementById("title")
@@ -315,7 +314,7 @@ audio.addEventListener("ended", () => nextSong())
 // Comienza
 shufflesonglist()
 
-//Créditos:
+//Créditos songs:
 //Mirai, Future - ATOLS feat.ONE:  https://vocadb.net/S/104650   http://mikudb.moe/album/one00/  https://www.youtube.com/watch?v=sEPZUVgGPi0
 // Mitchie M https://vocaloid.fandom.com/es/wiki/REALISTIC_VIRTUAL_SINGING https://www.youtube.com/watch?v=zkLJoFp2UAE https://www.youtube.com/watch?v=KmvydnVTriE
                 //https://www.youtube.com/watch?v=rmYU2ikxjpA
