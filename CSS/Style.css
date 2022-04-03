@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reproductor*//* Nota: Una manera más rápida de hacer el comentario es con: comando + alt + alguna letra (en mi caso usé a) = shift + alt + a = /**/   /**/
+.Reproductor {
+    height: 710px;
+    min-width: 60%;
+    background-image: linear-gradient(rgb(255, 0, 140), rgb(0, 255, 242)); /* Hace que se junten dos colores (uno arriba y otro abajo, haciendo en medio un tipo degradado)*/
+    border-radius: 4rem; /*Hace que los bordes del en este caso el reproductor de música, se hagan redondas (las orillas) cuando aumentas el número.*/
+    padding: 8rem; /*En este caso agrandará el reproductor de música, l ohará más espacioso*/
+    color: white; /*Color de la letra de arriba*/
+    margin: auto;
+}
+
+/* Title */
+.title {
+    margin-top: 0;
+    text-align: center; /*Centra el texto*/
+}
+.NombreAlbum {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(0, 238, 255);
+}
+.Artist {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(130, 32, 175);
+}
+
+
+
+.image { /* Imagen*/
+    width: 400px; 
+    height: 400px;
+    border-radius: 2rem;
+    display: block; /*  block: hace que se comporte como un bloque*/
+    margin: 0 auto 1rem auto;
+}
+
+/* Progress */
+.container {
+    height: .6rem;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+}
+
+.progreso {
+    background-color: rgb(247, 59, 122);
+    width: 0;
+    height: 100%;
+}
+
+
+.controles { /* Controles */   /* Acomodará los botones (controles) */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.controles button {
+    background-color: transparent;
+    border: none;
+}
+
+.controles i {
+    font-size: 2rem;
+    color: rgb(255, 196, 0);
+}
+
+/* Songs */
+.songlist {
+    position: relative;
+    font-size: 24px;
+    height: 760px;
+    width: 310px;
+     border: 4px solid rgb(3, 255, 213);
+     display: flex;   
+     flex-direction: column; 
+     justify-content: center; 
+    margin: auto;
+    padding: 100px 40px;
+    list-style: none;
+    
+}
+
+.songlist li {
+    margin-bottom: 1rem;
+}
+
+.songlist a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.songlist a.active {
+    color: rgb(200, 255, 0);
+    font-weight: bold;
+}
+
